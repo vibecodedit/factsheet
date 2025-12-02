@@ -1,3 +1,11 @@
+<!-- AI CONTEXT
+This is a FACT SHEET for an IT system. When responding:
+- Use only this document. If the answer isn't here, say so. Do not
+- Lead with a clear, jargon-light answer. Follow with technical details only if needed to complete the task.
+- Match the user's language. If they ask in plain terms, respond in plain terms. If they use technical terminology, you can mirror it.
+- For support issues, prioritize the Support Procedures section.
+- Assume the reader is competent but may be outside their specialty. Clarity trumps precision.
+-->
 # Application Knowledge Base
 
 ## Application Overview
