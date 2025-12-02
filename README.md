@@ -4,13 +4,13 @@
 
 ## The Problem with Documentation
 
-Traditional documentation becomes a **separate chore** from the actual work required to maintain it. This disconnect inevitably leads to **documentation rot**—where documentation falls out of sync with reality, becomes outdated, and eventually gets ignored.
+Traditional documentation becomes a **separate chore** from the actual work required to maintain it. This disconnect inevitably leads to **documentation rot** where documentation falls out of sync with reality, becomes outdated, and eventually gets ignored.
 
-When documentation lives in wikis, Confluence pages, or separate systems, IT staff must remember to update it after making changes. This extra step is often forgotten during incidents, quick fixes, or busy periods. The result? Documentation that can't be trusted.
+When documentation lives in wikis, email threads, your team's heads, or separate systems, IT staff must remember to update it after making changes. This extra step is often forgotten during incidents, quick fixes, or busy periods. The result? Documentation that can't be trusted.
 
 ## The FACT SHEET Solution
 
-FACT SHEET erases the documentation rot problem with a single insight: **make documentation so simple that IT staff maintain it without even noticing.**
+FACT SHEET erases the documentation rot problem with a single insight: **make documentation so simple that IT staff maintain it without even noticing.** It's literally one file with every answer.
 
 A FACT SHEET is:
 
