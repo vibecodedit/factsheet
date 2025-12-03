@@ -14,7 +14,7 @@ FACT SHEET erases the documentation rot problem with a single insight: **make do
 
 A FACT SHEET is:
 
-- **Single file**: One Markdown file per application—portable, version-controlled, easy to find
+- **Single file**: One Markdown file per application that's portable, version-controlled, and easy to find
 - **Structured enough for AI**: Organized sections that AI assistants can parse and reason over effectively
 - **Simple enough for humans**: Plain Markdown that anyone can edit in any text editor, no special tools required
 - **Living documentation**: Lives in the repo alongside the code, gets updated naturally as part of normal work
@@ -36,6 +36,57 @@ Because it's just a Markdown file in your repository, updating your FACT SHEET b
 - Include **operational details** that help during incidents: log locations, restart commands, common issues
 - Focus on **what responders need to know**: how to check if it's running, how to restart it, who to contact
 
+## Choosing the Right Template
+
+FACT SHEET comes in multiple variations designed for different organizational sizes. Choose the one that best matches your needs:
+
+### Enterprise Template (`app-knowledge-base-template-enterprise.md`)
+**Best for: Medium to large companies (50+ employees)**
+
+The most comprehensive template with sections for:
+- SLA tracking and compliance requirements
+- Disaster recovery and business continuity
+- On-call rotations and escalation paths
+- Complex networking (load balancers, CDN, multiple environments)
+- Change management and audit trails
+- Security controls and compliance documentation
+
+Use this if you have dedicated IT teams, complex infrastructure, multiple environments, and formal operational processes.
+
+### Small Business Template (`app-knowledge-base-template-small-business.md`)
+**Best for: Small to mid-size companies (10-50 employees)**
+
+A streamlined template focused on practical operations:
+- Simplified hosting and access information
+- Essential troubleshooting procedures
+- Basic backup and deployment processes
+- Vendor and support contacts
+
+Use this if you're running on managed cloud services, have a smaller team, and need straightforward documentation without enterprise overhead.
+
+### Micro Business Template (`business-factsheet-template-micro.md`)
+**Best for: Solopreneurs and very small businesses (1-10 employees)**
+
+A single unified document covering ALL your business systems:
+- Websites and applications
+- SaaS tools and services
+- Domain, email, and payment processing
+- Vendor contacts and renewal tracking
+- Emergency procedures
+
+Use this if you're a one-person operation or small team managing multiple tools and services. Instead of creating separate fact sheets for each system, this template lets you document everything in one place.
+
+### Template Flexibility
+
+**You're not locked into any specific template.** These variations exist to save you time by providing a starting point that matches your complexity level. You can:
+
+- Start with the enterprise template and remove sections you don't need
+- Use the small business template and add enterprise sections as you grow
+- Customize any template to match your specific requirements
+- Mix and match sections from different templates
+
+The goal is to help you create documentation faster, not to force you into a specific structure.
+
 ## Benefits
 
 - **Reduced MTTR**: During incidents, responders have immediate access to critical information
@@ -46,7 +97,13 @@ Because it's just a Markdown file in your repository, updating your FACT SHEET b
 
 ## What's Included
 
-- `app-knowledge-base-template.md` - The blank template ready to fill out
+### Templates
+- `app-knowledge-base-template.md` - The original standard template
+- `app-knowledge-base-template-enterprise.md` - Comprehensive template for larger organizations
+- `app-knowledge-base-template-small-business.md` - Streamlined template for small businesses
+- `business-factsheet-template-micro.md` - Unified business fact sheet for micro-businesses
+
+### Examples
 - `example-filled-factsheet.md` - A complete example showing how a filled FACT SHEET looks
 
 ## Contributing
