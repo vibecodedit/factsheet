@@ -1,25 +1,27 @@
 # FACT SHEET
 
-> The instruction manual standard that solves documentation rot.  
+> The instruction manual standard that solves fragmented information.
 
 ## The Problem with Documentation
 
-Traditional documentation becomes a **separate chore** from the actual work required to maintain it. This disconnect inevitably leads to **documentation rot** where documentation falls out of sync with reality, becomes outdated, and eventually gets ignored.
+When you need to understand or troubleshoot an application, the information you need is **scattered everywhere**: wikis, email threads, Slack messages, configuration files, someone's head, tribal knowledge, separate documentation systems.
 
-When documentation lives in wikis, email threads, your team's heads, or separate systems, IT staff must remember to update it after making changes. This extra step is often forgotten during incidents, quick fixes, or busy periods. The result? Documentation that can't be trusted.
+**You waste precious time hunting** for answers across multiple sources, especially during incidents when every second counts. You're never sure if you found everything, or if there's a critical detail buried in some other system. You end up asking three different people to piece together information that should be in one place.
+
+This **fragmentation problem** means responders can't act quickly, new team members take forever to get up to speed, and everyone wastes time context-switching between systems just to find basic information.
 
 ## The FACT SHEET Solution
 
-FACT SHEET erases the documentation rot problem with a single insight: **make documentation so simple that IT staff maintain it without even noticing.** It's literally one file with every answer.
+FACT SHEET solves the fragmentation problem with a single insight: **put everything about an application in one place.** It's literally one file with every answer.
 
 A FACT SHEET is:
 
-- **Single file**: One Markdown file per application that's portable, version-controlled, and easy to find
+- **Single file**: One Markdown file per application that consolidates ALL your application knowledge—no more jumping between systems
 - **Structured enough for AI**: Organized sections that AI assistants can parse and reason over effectively
 - **Simple enough for humans**: Plain Markdown that anyone can edit in any text editor, no special tools required
-- **Living documentation**: Lives in the repo alongside the code, gets updated naturally as part of normal work
+- **Living documentation**: Lives in the repo alongside the code, making it the natural place to record information as you work
 
-Because it's just a Markdown file in your repository, updating your FACT SHEET becomes as natural as updating a README. No context switching, no separate systems to log into, no extra steps to remember.
+Because it's just a Markdown file in your repository, it becomes your **single source of truth**. No context switching, no separate systems to log into, no hunting across multiple places. Everything you need is in one spot.
 
 ## How to Use FACT SHEET
 
@@ -89,10 +91,10 @@ The goal is to help you create documentation faster, not to force you into a spe
 
 ## Benefits
 
-- **Reduced MTTR**: During incidents, responders have immediate access to critical information
-- **Better AI assistance**: AI can provide context-aware help using your specific infrastructure details
-- **No documentation rot**: Updates happen naturally as part of normal work
-- **Knowledge preservation**: New team members can quickly understand the application
+- **Reduced MTTR**: During incidents, responders have immediate access to ALL critical information in one place
+- **Stop hunting**: No more searching across wikis, Slack, email, and tribal knowledge to find answers
+- **Better AI assistance**: AI can provide context-aware help using your specific infrastructure details from a single source
+- **Knowledge preservation**: New team members find everything they need in one document instead of asking around
 - **Version controlled**: Track changes over time, see what changed and when
 
 ## What's Included
