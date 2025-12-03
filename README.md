@@ -14,7 +14,7 @@ FACT SHEET erases the documentation rot problem with a single insight: **make do
 
 A FACT SHEET is:
 
-- **Single file**: One Markdown file per application—portable, version-controlled, easy to find
+- **Single file**: One Markdown file per application that's portable, version-controlled, and easy to find
 - **Structured enough for AI**: Organized sections that AI assistants can parse and reason over effectively
 - **Simple enough for humans**: Plain Markdown that anyone can edit in any text editor, no special tools required
 - **Living documentation**: Lives in the repo alongside the code, gets updated naturally as part of normal work
