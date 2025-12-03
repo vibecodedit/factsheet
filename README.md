@@ -1,6 +1,6 @@
 # FACT SHEET
 
-> The single, portable, clean Markdown file that solves documentation rot.
+> The instruction manual standard that solves documentation rot.  
 
 ## The Problem with Documentation
 
@@ -115,5 +115,3 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to suggest improvem
 This project is released under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
-
-**FACT SHEET**: Fact Sheet, the standard instruction manual for the software powering your business.
