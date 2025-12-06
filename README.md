@@ -1,6 +1,6 @@
 # FACT SHEET
 
-> The instruction manual standard that solves fragmented information.
+> The instruction manual standard that solves fragmented information. When an employee falls for a phishing email and ransomware is actively encrypting every single server, or you misconfigured a load balancer, or accidentally changed the wrong DNS record, you will me OK! Because of Fact Sheet, you'll have the entire encyclopedia to your complete tech stack and AI at your side to get started immediately on diagnosing your unique emergency. Fact Sheet is also perfect for reminding you how to do those routine technical tasks that you just don't do frequently enoguh to commit to memory. Let Fact Sheet hold all the knowledge about the specifics and minor (yet crtiical) details, and let AI retrieve that info for you only when necessary, like an unexpected tech emergency. Fork **Fact Sheet** today, upload your tech info into one of the templates, and immediately get value from a one-source knowledge base for all the critical technical information that runs your business.  
 
 ## The Problem with Documentation
 
@@ -25,27 +25,27 @@ Because it's just a Markdown file in your repository, it becomes your **single s
 
 ## How to Use FACT SHEET
 
-1. **Fork** this repository or copy the template to your own project
-2. **Copy** `app-knowledge-base-template.md` to your application repository
-3. **Fill In** the template with your application's details (see `example-filled-factsheet.md` for reference)
-4. **Feed** the FACT SHEET to your AI chat assistant when you need help
-5. **Prompt** the AI: "Using this FACT SHEET, help me troubleshoot why the application won't start" or "Based on this FACT SHEET, generate a deployment checklist"
+1. **Fork** this repository or copy the template to your own project  
+2. **Copy** `app-knowledge-base-template.md` to your application repository  
+3. **Fill In** the template with your application's details (see `example-filled-factsheet.md` for reference)  
+4. **Feed** the FACT SHEET to your AI chat assistant when you need help  
+5. **Prompt** the AI: "Using this FACT SHEET, help me troubleshoot why the application won't start" or "Based on this FACT SHEET, generate a deployment checklist"  
 
 ## What Makes a Good FACT SHEET
 
-- Keep information **factual and current**—dates, versions, IP addresses, contact names
+- Keep information **factual and current**. That goes for dates, versions, IP addresses, contact names, and whatever else you need to be up-to-date always  
 - Update it **when you make changes**, not as a separate task later
 - Include **operational details** that help during incidents: log locations, restart commands, common issues
-- Focus on **what responders need to know**: how to check if it's running, how to restart it, who to contact
+- Focus on **what responders need to know**: how to check an application's or system's operational status to see if it's running, how to restart it, who to contact and how  
 
 ## Choosing the Right Template
 
-FACT SHEET comes in multiple variations designed for different organizational sizes. Choose the one that best matches your needs:
+FACT SHEET comes in multiple variations designed for different organizational sizes. Choose the one that best matches your needs, and then adapt/tweak the section names to suit your needs and level of specificity:
 
 ### Enterprise Template (`app-knowledge-base-template-enterprise.md`)
-**Best for: Medium to large companies (50+ employees)**
+**Best for: Medium to large companies (501+ employees)**
 
-The most comprehensive template with sections for:
+The most comprehensive template with sections for:  
 - SLA tracking and compliance requirements
 - Disaster recovery and business continuity
 - On-call rotations and escalation paths
@@ -53,10 +53,11 @@ The most comprehensive template with sections for:
 - Change management and audit trails
 - Security controls and compliance documentation
 
-Use this if you have dedicated IT teams, complex infrastructure, multiple environments, and formal operational processes.
+Use this if you have dedicated IT teams, complex infrastructure, multiple environments (production, and/or dev, and/or test), measureable baselines and testing outcomes, and formal operational processes that anyone could unexpectedly need at the most inconvenient time of day, week, month, or year.  Think of this as *the* source that you can immediately rely on to guide you through a fire even if you've got no experience getting out of a fire by yourself.  
+
 
 ### Small Business Template (`app-knowledge-base-template-small-business.md`)
-**Best for: Small to mid-size companies (10-50 employees)**
+**Best for: Small to mid-size companies (10-500 employees)**
 
 A streamlined template focused on practical operations:
 - Simplified hosting and access information
@@ -67,7 +68,7 @@ A streamlined template focused on practical operations:
 Use this if you're running on managed cloud services, have a smaller team, and need straightforward documentation without enterprise overhead.
 
 ### Micro Business Template (`business-factsheet-template-micro.md`)
-**Best for: Solopreneurs and very small businesses (1-10 employees)**
+**Best for: Solopreneurs and very small businesses (1-9 employees)**
 
 A single unified document covering ALL your business systems:
 - Websites and applications
@@ -76,7 +77,7 @@ A single unified document covering ALL your business systems:
 - Vendor contacts and renewal tracking
 - Emergency procedures
 
-Use this if you're a one-person operation or small team managing multiple tools and services. Instead of creating separate fact sheets for each system, this template lets you document everything in one place.
+Use this if you're a one-person operation or small team managing multiple tools and services. Instead of creating separate Word documents for every app, system, or process, Fact Sheet helps you document everything in one place. So if something is wrong, you only need one document and an AI chat box to start fixing things instantly. No more "I'm going to be sick right now" moments for you.  
 
 ### Template Flexibility
 
