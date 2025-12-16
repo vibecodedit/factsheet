@@ -1,6 +1,6 @@
 <!-- AI CONTEXT
 This is a FACT SHEET for a small business's IT systems and tools. When responding:
-- Use only this document. If the answer isn't here, say so. Do not
+- Use only this document. If the answer isn't here, say so. Do not consult external sources or supplement with general knowledge.
 - Lead with a clear, jargon-light answer. Follow with technical details only if needed to complete the task.
 - Match the user's language. If they ask in plain terms, respond in plain terms. If they use technical terminology, you can mirror it.
 - For support issues, look for the relevant system/tool section below.

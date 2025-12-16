@@ -2,36 +2,27 @@
 
 ## Application Overview
 
-**Application Name:** ShopHub Order Management System
+**Application Name:** Acme CRM
 
-**Description:** Web-based order processing and fulfillment system that handles customer orders from the e-commerce storefront through shipping confirmation
+**Description:** Web-based client relationship management system that helps the company maintain healthy relationships with clients, colleagues, and company alumni.  
 
-**Business Purpose:** Processes all customer orders for ShopHub.com, manages inventory allocation, generates picking lists for warehouse staff, and sends shipping notifications to customers
+**Business Purpose:** Maintains all contact and relationship details for company contacts, manages relationship strenth scores, and helps maintain relevant marketing email lists.  
 
 **Environment:** Production
 
-**Criticality Level:** Critical
+**Criticality Level:** App is critical for normal business operations
 
-**Owner/Team:** Platform Engineering Team
+**Owner/Team:** Application Engineering Team
 
-**Primary Contact:** Sarah Chen, sarah.chen@shophub.example, +1-555-0123
-
-**Secondary Contact:** Marcus Rodriguez, marcus.r@shophub.example, +1-555-0124
+**Primary Contact:** AppEngineeringTeam@company.com
 
 ---
 
 ## Technical Information
 
-### Technology Stack
-- **Language/Framework:** Python 3.11 with Django 4.2
-- **Runtime Version:** Python 3.11.6
-- **Web Server:** Nginx 1.24 (reverse proxy)
-- **Application Server:** Gunicorn 21.2.0 with 8 worker processes
-
 ### Version Information
-- **Current Version:** v3.8.2
-- **Last Updated:** 2025-11-15
-- **Release Schedule:** Every 2 weeks (Tuesday evenings)
+- **Current Version:** v3.8.12
+- **Last Updated:** 20251208
 
 ### Dependencies
 - **External APIs:**
@@ -52,8 +43,8 @@
 ## Networking Information
 
 ### IP Addresses
-- **Public IP:** 203.0.113.45 (behind ALB)
-- **Private IP:** 10.20.5.11 (app-server-1), 10.20.5.12 (app-server-2)
+- **Public IP:** 203.0.113.45
+- **Private IP:** 10.20.5.11 (dc1-crm-app-1), 10.20.5.12 (app-server-2)
 - **Additional IPs:** 10.20.5.100 (Celery worker server)
 
 ### Ports & Protocols
@@ -64,7 +55,7 @@
 - **Other Ports:** 6379 (Redis), 5672 (RabbitMQ for Celery)
 
 ### Load Balancer Information
-- **Load Balancer Type:** AWS Application Load Balancer (ALB)
+- **Load Balancer Type:** F5
 - **LB IP/Hostname:** orders-prod-alb-1234567890.us-east-1.elb.amazonaws.com / 203.0.113.45
 - **LB Algorithm:** Round Robin with sticky sessions
 - **Health Check URL:** /api/health
@@ -72,40 +63,35 @@
 - **Backend Servers:** app-server-1 (10.20.5.11), app-server-2 (10.20.5.12)
 
 ### DNS & Hostnames
-- **Primary Hostname:** orders.shophub.com
-- **Alternative Hostnames:** order-management.shophub.com
-- **Internal Hostname:** orders.internal.shophub.net
+- **Hostname:** crm.company.com
 
 ### Firewall Rules
 - **Inbound Rules:**
   - Port 443 from internet (0.0.0.0/0)
-  - Port 22 from bastion host (10.20.1.5)
-  - Port 8000 from ALB security group only
 - **Outbound Rules:**
   - HTTPS (443) to external APIs (Stripe, ShipStation, SendGrid)
   - PostgreSQL (5432) to RDS instance
   - Redis (6379) to ElastiCache cluster
   - HTTP/HTTPS to internal services on 10.20.0.0/16
-- **Allowed Source IPs:** Office network (198.51.100.0/24), VPN users (dynamic via VPN gateway)
+- **Allowed Source IPs:** ThirdPartyVendorIntegration (198.51.100.0/24)
 
 ---
 
 ## Infrastructure Details
 
-### Server Information
-| Server Name | Role | OS | CPU | RAM | Disk |
-|-------------|------|-----|-----|-----|------|
-| app-server-1 | Django App Server | Ubuntu 22.04 LTS | 4 cores | 16GB | 100GB SSD |
-| app-server-2 | Django App Server | Ubuntu 22.04 LTS | 4 cores | 16GB | 100GB SSD |
-| celery-worker-1 | Background Task Processor | Ubuntu 22.04 LTS | 8 cores | 32GB | 100GB SSD |
+### Production Server Information
+- **Web Server:** DC1-CRM-WEB-1.company.com
+- **Application Server:** DC1-CRM-APP-1.company.com
+
+### Develpoment Server Information
+- **Web Server:** DC1-CRM-WEBDEV-1.company.com
+- **Application Server:** DC1-CRM-APPDEV-1.company.com
 
 ### Database Information
-- **Database Type:** PostgreSQL (Amazon RDS)
-- **Database Version:** PostgreSQL 15.4
-- **Database Server:** orders-db-prod.abc123.us-east-1.rds.amazonaws.com
-- **Database Name:** orders_production
-- **Connection String Format:** postgresql://orders_app:***@orders-db-prod.abc123.us-east-1.rds.amazonaws.com:5432/orders_production
-- **Connection Pool Size:** 20 connections per app server
+- **Database Type:** SQL Server  
+- **Database Version:** n/a
+- **Database Server:** appsDB.company.com
+- **Database Name:** CRMDB
 
 ### Storage Locations
 - **Application Files:** /opt/shophub/orders
@@ -133,18 +119,14 @@
 ## Access & Authentication
 
 ### Application Access
-- **Public URL:** https://orders.shophub.com
-- **Internal URL:** https://orders.internal.shophub.net
-- **Admin Portal:** https://orders.shophub.com/admin
-- **VPN Required:** No for public endpoints, Yes for admin portal and internal URL
+- **Internal URL:** https://crm.company.com
+- **Admin Portal:** https://crm.company.com/admin
 
 ### Authentication Methods
-- **Authentication Type:** OAuth 2.0 via ShopHub Auth Service (internal SSO)
-- **SSO Provider:** ShopHub Auth Service (Keycloak-based)
-- **MFA Enabled:** Yes, required for admin users
+- **Authentication Type:** SSO
+- **MFA Enabled:** No
 - **Service Accounts:**
-  - orders-api-service (for inventory service integration)
-  - orders-celery-worker (for background tasks)
+  - crm_service (for service integrations and background tasks)
 
 ### Access Levels
 - **Admin Access:** Platform Engineering team (5 people), managed via Active Directory group "shophub-orders-admins"
